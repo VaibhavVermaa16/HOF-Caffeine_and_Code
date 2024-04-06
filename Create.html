@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Create.css" />
+  <title>BuyToken</title>
+</head>
+
+<body>
+  <div class="hero">
+    <div id="nav">
+      <h1 id="title">AdEx</h1>
+      <a href="index.html" style="color:antiquewhite"><h4 href="index.html">Home</h4></a>
+      <h4>Buy Tokens</h4>
+      <h4>Create Tokens</h4>
+      <a href="https://opensea.io/account" style="color:antiquewhite"><h4>Profile</h4></a>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <div class="form-container">
+      <h1 style="color: rgb(249, 198, 198); text-align:center; display:inline-block;">Create NFTs</h1>
+      <hr>
+      <input type="textbox" id="name" placeholder="Enter NFT Name" />
+      <input type="text" id="desc" placeholder="Enter NFT Description" />
+      <input type="file" name="" id="image">
+      <button onclick="uploadImage()" id="createBtn">
+        Create NFT
+      </button>
+
+      <div id="nftContainer">
+      </div>
+    </div>
+    <div class="displayNFT"></div>
+    <video autoplay loop muted src="Assests/3129671-uhd_3840_2160_30fps.mp4"></video>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.3/web3.min.js"></script>
+  <script src="Create.js"></script>
+</body>
+
+</html>
